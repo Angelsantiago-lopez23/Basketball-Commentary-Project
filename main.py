@@ -2,19 +2,30 @@
 """Author is Angel Santiago-Lopez"""
 
 
+def calculate_score():
+    """
+    This function calculates the score based on user input.
+    """
+    option_one = input("Choose whether it's 4 points total or 3 points total: ")
+    option_two = input("Choose whether it's a 3 pointer or 2 pointer: ")
+    try:
+        num1 = int(option_one)
+        num2 = int(option_two)
+        difference = num1 - num2
+        print("In the end it was a", difference)
+        print("This was the amount of free-throws he took after the 3 pointer or 2 pointer decision.")
+    except ValueError:
+        print("Invalid input. Please enter a valid integer.")
+
 def main():
     """
-Here we will go through the play by play of both teams and in some instance the user will
-be able to determine the outcome of certain plays from the players.
+    This is the main function that runs the basketball game commentary.
     """
-    # Angel Santiago-Lopez, python program is a high-level based program and one of the easiest to learn as a starter.
-    # The program is object oriented and this project will revolve around a sports theme.
     print("Hello, welcome to a mini basketball commentary of a Brooklyn Nets vs Los Angeles Lakers game")
     print("Ball is tipped off and 3 minutes in no one has scored."
           "\nLebron goes down the court for a layup, gets fouled but the basketball is midair. "
           "The ball swirls around the rim for and one point.")
     print("2+1:", "3 points for the team after the made the free-throw")
-    # This addition of string was to show the reaction from the team/excitement
     print("LETSSS" + "GOOOOO!!!")
     print("The teams gets hyped up with the crowd.")
     print("The opposing star player named Durant pulls up on the court and shoots a 3."
@@ -34,7 +45,8 @@ be able to determine the outcome of certain plays from the players.
     singer_name = input("Your favorite artist to perform for halftime? ")
     print("At halftime the artist to perform is", singer_name)
     print("After the artist performance the third quarter started off with a\n Banger"
-          "\nAs Kevin Durant ran past the defenders for a thunder slam dunk.")
+          "\nAs Kevin Durant ran past the defenders for a thunder slam dunk
+
     # Determine the moves Lebron does as he makes his way to the rim.
     moves = input("Choose between Lebron spins or back-step?: ")
     face = input("Type in only a facial expresion?: ")
